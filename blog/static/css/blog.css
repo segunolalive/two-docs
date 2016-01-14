@@ -89,3 +89,7 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: rgba(0, 0, 0, 0.55);
 }
+
+.post p{
+    font-size: 20px;
+}
