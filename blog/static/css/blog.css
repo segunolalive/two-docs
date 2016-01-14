@@ -93,3 +93,11 @@ h1, h2, h3, h4 {
 .post p{
     font-size: 20px;
 }
+
+.pull-right{
+    color: #6BA5D8;
+}
+
+.clearfix{
+    clear: both;
+}
