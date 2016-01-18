@@ -113,16 +113,20 @@ h1, h2, h3, h4 {
     color: black;
 }
 
+
+.post a{
+    text-decoration: none;
+}
 .post:hover> a{
     text-decoration: none;
 }
 
-.post h1 a, .post h1 a:visited {
+.post a h1, .post a h1:visited {
     color: rgba(0, 0, 0, 0.55);
 }
 
 .post p{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .comment {
