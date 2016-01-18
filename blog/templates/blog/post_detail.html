@@ -9,9 +9,19 @@
         {% endif %}
         <h1>{{ post.title }}</h1><hr>
         <p>{{ post.text|linebreaks }}</p><hr>
-        
-        <div class="fb-like" data-href="{% url 'post_detail' pk=post.pk %}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
-        <div class="fb-comments" data-href="{% url 'post_detail' pk=post.pk %}" data-numposts="5"></div>
+        {% for comment in post.comments.all %}
+            <div class="comment">
+                <div class="date">{{comment.created_date}}</div>
+                <strong>{{comment.author}}</strong>
+                <p>{{comment.text|linebreaks}}</p>
+            </div>
+        {% empty %}
+            <p>No comments here yet</p>
+        {% endfor%}
+        
+        <!--<div class="fb-like" data-href="{% url 'post_detail' pk=post.pk %}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+        <div class="fb-comments" data-href="{% url 'post_detail' pk=post.pk %}" data-numposts="5"></div>-->
     </div>
 {% endblock %}
