@@ -7,6 +7,8 @@
                 {{ post.published_date }}
             </div>
         {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        
         <h1>{{ post.title }}</h1><hr>
         <p>{{ post.text|linebreaks }}</p><hr>
 
@@ -20,8 +22,8 @@
             <p>No comments here yet</p>
         {% endfor%}
         
-        <!--<div class="fb-like" data-href="{% url 'post_detail' pk=post.pk %}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        <div class="fb-like" data-href="{% url 'post_detail' pk=post.pk %}" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
-        <div class="fb-comments" data-href="{% url 'post_detail' pk=post.pk %}" data-numposts="5"></div>-->
+        <div class="fb-comments" data-href="{% url 'post_detail' pk=post.pk %}" data-numposts="5"></div>
     </div>
 {% endblock %}

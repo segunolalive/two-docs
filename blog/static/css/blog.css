@@ -56,11 +56,6 @@ h1 a {
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
 
 .pull-right{
     color: #6BA5D8;
@@ -98,9 +93,15 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
 
 .post {
-    margin:10px 10px 60px 10px;
+    margin:10px 20px 60px 20px;
     
     background-color: #ffffff;
     border-radius: 15px;
@@ -111,12 +112,10 @@ h1, h2, h3, h4 {
 
 .post a{
     color: black;
-}
-
-
-.post a{
     text-decoration: none;
 }
+
+
 .post:hover> a{
     text-decoration: none;
 }
@@ -131,4 +130,15 @@ h1, h2, h3, h4 {
 
 .comment {
     margin: 20px 0px 20px 20px;
+}
+
+#read {
+    color:#6BA5D8;
+}
+
+#recent {
+    color:#6BA5D8;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
 }

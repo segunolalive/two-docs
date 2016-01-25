@@ -20,6 +20,9 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    def __unicode__(self):
+        return self.title
+
 class Comment(models.Model):
     """this model handles creation and posting of comments to the blog"""
     post = models.ForeignKey('blog.Post', related_name='comments')
@@ -33,4 +36,7 @@ class Comment(models.Model):
         self.save()
 
     def __str__(self):
+        return self.text
+
+    def __unicode__(self):
         return self.text

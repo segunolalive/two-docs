@@ -9,9 +9,9 @@
                 </div>
 
                 <h1>{{ post.title }}</h1><hr>
-                <p>{{ post.text|linebreaks|truncatechars:120 }}</p>
-                <p><a href="" class= "btn btn-primary" role="button">Read Full Article</a>
-                </p>
+                <p>{{ post.text|linebreaks|truncatechars:150 }}<span id= "Read">Read More</span></p>
+                <!--<p><a href="" class= "btn btn-primary" role="button">Read Full Article</a>
+                </p>-->
             </a>
         </div>
     {% endfor %}
