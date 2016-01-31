@@ -40,6 +40,7 @@ h1 a {
     font-size: 19px;
 }
 
+
 .menu > ul > li > a {
     padding: 15px;
     display: inline-block;
@@ -47,7 +48,14 @@ h1 a {
     font-family: 'Quicksand', sans-serif;
 }
 
+.menu > ul > li:hover > a{
+    color: #6BA5D8;
+}
 
+/*.menu > ul > li:visited > a{
+    color: #6BA5D8;
+}
+*/
 .content {
     margin-top: 10px;
     margin-left: 40px;
@@ -93,19 +101,28 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-.top-menu, .top-menu:hover, .top-menu:visited {
+.top-menu {
     color: #ffffff;
     float: right;
     font-size: 26pt;
     margin-right: 20px;
 }
 
+.top-menu:hover{
+    color: #6BA5D8;
+
+}
+
+.top-menu:visited{
+    color: #6BA5D8;
+}
+
 .post {
-    margin:10px 20px 60px 20px;
+    margin:0px 20px 0px 20px;
     
     background-color: #ffffff;
-    border-radius: 15px;
-    margin-bottom: 40px;
+    /*border-radius: 15px;
+    margin-bottom: 40px;*/
     padding: 15px;
     box-shadow: 1px black;
 }
