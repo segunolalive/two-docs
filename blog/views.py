@@ -9,10 +9,7 @@ from .forms import PostForm
 def post_list(request):
 	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
 	return render(request, 'blog/post_list.html', {'posts': posts})
-	
-#def all_posts(request):
-#	posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse
-#	return render(request, 'blog/all_posts.html', {'posts': posts})
+
 
 def recent_posts(request):
 	posts= Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')[:5]
