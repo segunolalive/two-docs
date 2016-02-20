@@ -46,10 +46,12 @@ h1 a {
     display: inline-block;
     color: #ffffff;
     font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
 }
 
 .menu > ul > li:hover > a{
     color: #6BA5D8;
+    text-decoration: none;
 }
 
 /*.menu > ul > li:visited > a{
@@ -117,6 +119,10 @@ h1, h2, h3, h4 {
     color: #6BA5D8;
 }
 
+.post_wrapper{
+    margin-bottom: 50px;
+}
+
 .post {
     margin:0px 20px 0px 20px;
     
@@ -125,6 +131,7 @@ h1, h2, h3, h4 {
     margin-bottom: 40px;*/
     padding: 15px;
     box-shadow: 1px black;
+    /*margin-bottom: 20px;*/
 }
 
 .post a{
